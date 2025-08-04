@@ -1,0 +1,12 @@
+*.log
+*.bed
+*.tsv
+*.csv
+*.pdf
+*.png
+*.jpeg
+*.jpg
+*.zip
+*.gz
+.ipynb_checkpoints/
+.DS_Store
