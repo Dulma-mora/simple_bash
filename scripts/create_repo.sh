@@ -7,7 +7,7 @@
 # Usage: ./create_git_repo.sh <existing_path> <remote_url>
 # Example: ./create_repo.sh /group/bienko/projects/HiC-SV/hic/scripts https://github.com/Dulma-mora/HiC-SV_Project.git
 # bash create_repo.sh /group/bienko/user_folders/dulce.montero/Tests/simple_bash https://github.com/Dulma-mora/simple_bash.git
-
+# bash create_repo.sh /group/bienko/user_folders/dulce.montero/Tests/simple_bash https://github.com/Dulma-mora/MV_003_notebooks.git
 set -e  
 
 REPO_PATH=$1
