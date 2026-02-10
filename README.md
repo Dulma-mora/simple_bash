@@ -1,7 +1,8 @@
-My collection of simple and handy Bash scripts, mainly for Git!
+Simple bash colletion d:
 
 
 ## GitHub
 
 
-1. [create_repo.sh](scripts/create_repo.sh): creates a new Git repo from an existing local directory.
+1. [create_repo.sh](repositories/create_repo.sh): creates a new Git repo from an existing local directory.
+2. [01.download.data.sh](download_metadata/01.download.data.sh): download Hi-C seq raw data from metadata.
