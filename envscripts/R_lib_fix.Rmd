@@ -1,0 +1,22 @@
+# Fix R conda library
+
+**Problem:** 
+
+On the HPC, R often tries to install packages into ~/R/library (user library) or a system path like /opt/R/... instead of my conda env R4. This happens because R_LIBS_USER defaults to ~/R/library and/or site configs prepend system libraries. If I deleted ~/R, packages “disappear” because they were never in the conda env.
+
+**Goal:**
+Force R to install and load packages from the active conda environment:
+
+$CONDA_PREFIX/lib/R/library
+
+Conda activate R4 # in the console
+
+Then inside R:
+
+Sys.setenv(R_LIBS_USER = file.path(Sys.getenv("CONDA_PREFIX"), "lib", "R", "library"))
+.libPaths(c(Sys.getenv("R_LIBS_USER"), .libPaths()))
+Sys.getenv("R_LIBS_USER")
+.libPaths()
+
+#now you can do: 
+install.packages("lol")
